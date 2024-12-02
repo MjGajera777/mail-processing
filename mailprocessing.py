@@ -31,7 +31,7 @@ imap = imaplib.IMAP4_SSL(imap_server)
 imap.login(user,password)
 
 imap.select("Inbox")
-
+ 
 _, msgnums = imap.search(None,"UNSEEN","FROM",sender)
 
 
